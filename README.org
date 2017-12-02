@@ -1,0 +1,18 @@
+* Reading ease
+** What is this?
+This is a set of Jupyter Notebooks to do some fun data science! Do Daily Mail articles have a lower reading age than the Guardian? 
+
+The process is:
+1. For certain sections of both newspapers (health, money, news, science, sport, TV, travel, and 'special', Femail and Opinion respectively), I scraped all the articles from the current RSS feed of that section
+
+2. For all the articles in each section, I calculated its [[https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests][Flesch reading ease]]; I then averaged it for all articles in a section for each newspaper to get an average reading ease score for each section
+
+3. I then graphed the results using MatPlotLib
+
+
+** Why do this?
+This is my hack for MLH Local Hack Day 2017 at Edinburgh University - made in about 6 hours. 
+
+
+** So, what's the result?
+You can see the result for yourself in Visualise.ipynb. In summary: for every section except 'health', the Daily Mail has a higher readability score. This difference is most pronounced in 'sport' and 'special'. Surprisingly, the opposite result occurs with 'health': this is likely because the Daily Mail only has one 'health' section, while The Guardian has two (society and lifestyle - I used lifestyle). 
